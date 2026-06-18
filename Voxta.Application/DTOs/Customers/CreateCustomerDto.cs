@@ -1,10 +1,7 @@
-﻿namespace Voxta.Domain.Entities;
+﻿namespace Voxta.Application.DTOs.Customers;
 
-public class Customer
+public class CreateCustomerDto
 {
-    public Guid Id { get; set; }
-
-    // Thông tin cơ bản
     public string FullName { get; set; } = string.Empty;
 
     public string PhoneNumber { get; set; } = string.Empty;
@@ -15,17 +12,7 @@ public class Customer
 
     public string Position { get; set; } = string.Empty;
 
-    // Nguồn khách hàng
     public string Source { get; set; } = string.Empty;
 
-    // Ghi chú
     public string Note { get; set; } = string.Empty;
-
-    // Trạng thái
-    public bool IsActive { get; set; } = true;
-
-    // Audit
-    public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-
-    public DateTime? UpdatedAt { get; set; }
 }

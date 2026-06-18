@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Voxta.Infrastructure.Data;
 
@@ -11,9 +12,11 @@ using Voxta.Infrastructure.Data;
 namespace Voxta.Infrastructure.Migrations
 {
     [DbContext(typeof(VoxtaDbContext))]
-    partial class VoxtaDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260618094819_AddCustomerFields")]
+    partial class AddCustomerFields
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
