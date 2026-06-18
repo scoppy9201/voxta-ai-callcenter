@@ -1,0 +1,48 @@
+# Build
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Rider
+.idea/
+
+# VSCode
+.vscode/
+
+# NuGet
+*.nupkg
+
+# Logs
+*.log
+
+# Publish
+publish/
+
+# Database
+*.mdf
+*.ldf
+
+# App settings local
+appsettings.Development.json
+
+# Node
+node_modules/
+
+# Test Results
+TestResults/
+
+# EF Local DB
+Migrations/*Snapshot.cs.bak
+
+# OpenAI Keys
+appsettings.Local.json
+
+# Uploads
+Uploads/
+
+# Audio Recordings
+Recordings/
